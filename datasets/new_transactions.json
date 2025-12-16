@@ -1,0 +1,214 @@
+{
+  "type": "FilesInFolder",
+  "managed": false,
+  "featureGroup": false,
+  "formatType": "csv",
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT",
+    "ignoreErrorStatusOnBuild": false
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "style": "excel",
+    "charset": "utf-8",
+    "separator": ",",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "maxRowChars": 100000000,
+    "dateSerializationFormat": "ISO",
+    "arrayMapFormat": "json",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": true,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 35,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": ""
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "sean"
+    },
+    "lastModifiedOn": 1746708523114,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "params": {
+    "folderSmartId": "0rEtcdxP",
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "EXPLICIT_SELECT_FILES",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": [
+        "/transactions-prepared-2017-04.csv"
+      ]
+    },
+    "variablesExpansionLoopConfig": {
+      "enabled": false,
+      "mode": "CREATE_VARIABLE_FOR_EACH_COLUMN",
+      "replacements": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {"name":"transaction_id","type":"string"},
+      {"name":"authorized_flag","type":"string"},
+      {"name":"purchase_date","type":"string"},
+      {"name":"purchase_date_parsed","type":"string"},
+      {"name":"purchase_year","type":"string"},
+      {"name":"purchase_month","type":"string"},
+      {"name":"purchase_day","type":"string"},
+      {"name":"purchase_dow","type":"string"},
+      {"name":"purchase_hour","type":"string"},
+      {"name":"date","type":"string"},
+      {"name":"card_id","type":"string"},
+      {"name":"merchant_id","type":"string"},
+      {"name":"merchant_category_id","type":"string"},
+      {"name":"item_category","type":"string"},
+      {"name":"purchase_amount","type":"string"},
+      {"name":"signature_provided","type":"string"},
+      {"name":"merchant_subsector_description","type":"string"},
+      {"name":"spending_type","type":"string"},
+      {"name":"merchant_latitude","type":"string"},
+      {"name":"merchant_longitude","type":"string"},
+      {"name":"card_first_active_month","type":"string"},
+      {"name":"days_active","type":"string"},
+      {"name":"card_reward_program","type":"string"},
+      {"name":"card_latitude","type":"string"},
+      {"name":"card_longitude","type":"string"},
+      {"name":"card_fico_score","type":"string"},
+      {"name":"card_age","type":"string"},
+      {"name":"card_geopoint","type":"string"},
+      {"name":"card_state","type":"string"},
+      {"name":"card_state_enName","type":"string"},
+      {"name":"merchant_geopoint","type":"string"},
+      {"name":"merchant_state","type":"string"},
+      {"name":"merchant_state_enName","type":"string"},
+      {"name":"dist_cardholder_merchant","type":"string"},
+      {"name":"risk","type":"string"}
+    ],
+    "userModified": true
+  },
+  "typeSystemVersion": "V1",
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "ascending": true,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "monitor": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}

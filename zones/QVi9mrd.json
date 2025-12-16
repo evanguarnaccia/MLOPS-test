@@ -1,0 +1,20 @@
+{
+  "name": "Ground Truth Monitoring",
+  "color": "#087ABF",
+  "items": [
+    {
+      "objectId": "evaluate_on_transactions_scored",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "j8Hnrsgo",
+      "objectType": "MODEL_EVALUATION_STORE"
+    }
+  ],
+  "shared": [],
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

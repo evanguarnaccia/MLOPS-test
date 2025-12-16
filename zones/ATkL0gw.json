@@ -1,0 +1,20 @@
+{
+  "name": "Input Drift Monitoring",
+  "color": "#F9BE40",
+  "items": [
+    {
+      "objectId": "HFXbbpfu",
+      "objectType": "MODEL_EVALUATION_STORE"
+    },
+    {
+      "objectId": "evaluate_on_new_transactions",
+      "objectType": "RECIPE"
+    }
+  ],
+  "shared": [],
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Model Scoring",
+  "color": "#C54F00",
+  "items": [
+    {
+      "objectId": "0rEtcdxP",
+      "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "new_transactions",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "score_new_transactions",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "transactions_scored",
+      "objectType": "DATASET"
+    }
+  ],
+  "shared": [],
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

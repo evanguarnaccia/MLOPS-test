@@ -1,0 +1,12 @@
+.journal
+.mainlock
+.wlock
+.ts
+git-info.json
+.git
+version-tags.json
+*.pyc
+.coverage
+.htmlcov
+.DS_Store
+.idea

@@ -1,0 +1,114 @@
+{
+  "outputs": [
+    "prediction_correct"
+  ],
+  "evaluationDatasetType": "CLASSIC",
+  "limitSampling": true,
+  "sqlPipelineParams": {
+    "pipelineAllowMerge": true,
+    "pipelineAllowStart": true
+  },
+  "modelVersionId": "",
+  "backendType": "PY_MEMORY",
+  "filterInputColumns": false,
+  "dataDriftColumnHandling": {},
+  "customMetrics": [],
+  "assignmentThreshold": 0,
+  "keptInputColumns": [],
+  "treatDataDriftColumnHandling": false,
+  "predictionType": "BINARY_CLASSIFICATION",
+  "pastTimestepsToInclude": -1,
+  "dontComputePerformance": false,
+  "outputProbaPercentiles": false,
+  "outputProbabilities": true,
+  "computePropensity": false,
+  "forceOriginalEngine": false,
+  "possibleCustomMetrics": [],
+  "treatmentRatio": 0,
+  "individualExplanationParams": {
+    "drawInScoredSet": false,
+    "subChunkSize": 5000,
+    "method": "ICE",
+    "shapleyBackgroundSize": 100,
+    "nbExplanations": 3
+  },
+  "forcedClassifierThreshold": 0,
+  "sparkParams": {
+    "pipelineAllowMerge": true,
+    "sparkPreparedDFStorageLevel": "MEMORY_AND_DISK",
+    "pipelineAllowStart": true,
+    "sparkExecutionEngine": "SPARK_SUBMIT",
+    "sparkConf": {
+      "inheritConf": "default",
+      "conf": []
+    },
+    "sparkRepartitionNonHDFS": 1,
+    "sparkUseGlobalMetastore": false
+  },
+  "treatDriftFailureAsError": true,
+  "treatmentAssignmentMode": "SAMPLE_RATIO_APPROX",
+  "gpuConfig": {
+    "disabledCapabilities": [],
+    "params": {
+      "perGPUMemoryFraction": 0.5,
+      "gpuAllowGrowth": false,
+      "useGpu": false,
+      "gpuList": [
+        0
+      ]
+    }
+  },
+  "computePerTimeseriesMetrics": false,
+  "mlFlowOutputStyle": "RAW",
+  "driftConfidenceLevel": 0.95,
+  "needsInputDataFolder": false,
+  "labels": [],
+  "pythonBatchSize": 100000,
+  "filterApiLogsOnSmvId": false,
+  "assignTreatment": false,
+  "selection": {
+    "useMemTable": false,
+    "filter": {
+      "distinct": false,
+      "enabled": false
+    },
+    "latestPartitionsN": 1,
+    "maxRecords": 10000,
+    "seed": 1337,
+    "ordering": {
+      "rules": [],
+      "enabled": false
+    },
+    "withinFirstN": -1,
+    "partitionSelectionMethod": "ALL",
+    "targetRatio": 0.02,
+    "maxReadUncompressedBytes": -1,
+    "samplingMethod": "RANDOM_FIXED_NB",
+    "ascending": true
+  },
+  "computeAssertions": false,
+  "outputModelMetadata": false,
+  "evaluationDatasetTypeDetected": "CLASSIC",
+  "refitModel": false,
+  "maxNbForecastHorizons": 0,
+  "skipScoring": false,
+  "metrics": [
+    "precision",
+    "recall",
+    "auc",
+    "averagePrecision",
+    "f1",
+    "accuracy",
+    "mcc",
+    "hammingLoss",
+    "logLoss",
+    "lift",
+    "calibrationLoss",
+    "customScore",
+    "costMatrixGain"
+  ],
+  "batchSize": 100,
+  "treatPerfMetricsFailureAsError": true,
+  "outputExplanations": false,
+  "overrideModelSpecifiedThreshold": false
+}
