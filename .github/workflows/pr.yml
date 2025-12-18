@@ -3,7 +3,7 @@ name: Dataiku GitOps Release
 on:
   push:
     branches:
-      - master
+      - br8
 
 jobs:
   deploy:
