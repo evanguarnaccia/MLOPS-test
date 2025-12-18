@@ -1,7 +1,7 @@
-name: Dataiku GitOps Release
+name: Dataiku GitOps PR
 
 on:
-  push:
+  pull_request:
     branches:
       - master
 
