@@ -1,6 +1,148 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "transaction_id"
+      },
+      {
+        "d": true,
+        "name": "authorized_flag"
+      },
+      {
+        "d": true,
+        "name": "purchase_date"
+      },
+      {
+        "d": true,
+        "name": "purchase_date_parsed"
+      },
+      {
+        "d": true,
+        "name": "purchase_year"
+      },
+      {
+        "d": true,
+        "name": "purchase_month"
+      },
+      {
+        "d": true,
+        "name": "purchase_day"
+      },
+      {
+        "d": true,
+        "name": "purchase_dow"
+      },
+      {
+        "d": true,
+        "name": "purchase_hour"
+      },
+      {
+        "d": true,
+        "name": "date"
+      },
+      {
+        "d": true,
+        "name": "card_id"
+      },
+      {
+        "d": true,
+        "name": "merchant_id"
+      },
+      {
+        "d": true,
+        "name": "merchant_category_id"
+      },
+      {
+        "d": true,
+        "name": "item_category"
+      },
+      {
+        "d": true,
+        "name": "purchase_amount"
+      },
+      {
+        "d": true,
+        "name": "signature_provided"
+      },
+      {
+        "d": true,
+        "name": "merchant_subsector_description"
+      },
+      {
+        "d": true,
+        "name": "spending_type"
+      },
+      {
+        "d": true,
+        "name": "merchant_latitude"
+      },
+      {
+        "d": true,
+        "name": "merchant_longitude"
+      },
+      {
+        "d": true,
+        "name": "card_first_active_month"
+      },
+      {
+        "d": true,
+        "name": "days_active"
+      },
+      {
+        "d": true,
+        "name": "card_reward_program"
+      },
+      {
+        "d": true,
+        "name": "card_latitude"
+      },
+      {
+        "d": true,
+        "name": "card_longitude"
+      },
+      {
+        "d": true,
+        "name": "card_fico_score"
+      },
+      {
+        "d": true,
+        "name": "card_age"
+      },
+      {
+        "d": true,
+        "name": "card_geopoint"
+      },
+      {
+        "d": true,
+        "name": "card_state"
+      },
+      {
+        "d": true,
+        "name": "card_state_enName"
+      },
+      {
+        "d": true,
+        "name": "merchant_geopoint"
+      },
+      {
+        "d": true,
+        "name": "merchant_state"
+      },
+      {
+        "d": true,
+        "name": "merchant_state_enName"
+      },
+      {
+        "d": true,
+        "name": "dist_cardholder_merchant"
+      },
+      {
+        "d": true,
+        "name": "risk"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 0,
@@ -30,7 +172,10 @@
   "explorationFilters": [],
   "columnOrder": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "steps": [],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
@@ -58,7 +203,43 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "date": 100,
+    "merchant_latitude": 143,
+    "spending_type": 113,
+    "purchase_day": 105,
+    "purchase_month": 120,
+    "card_fico_score": 128,
+    "merchant_id": 127,
+    "card_longitude": 134,
+    "item_category": 113,
+    "dist_cardholder_merchant": 218,
+    "merchant_state_enName": 173,
+    "purchase_date_parsed": 190,
+    "card_state": 120,
+    "card_state_enName": 169,
+    "signature_provided": 150,
+    "purchase_dow": 105,
+    "card_age": 100,
+    "transaction_id": 120,
+    "purchase_year": 113,
+    "card_first_active_month": 211,
+    "days_active": 100,
+    "card_latitude": 134,
+    "merchant_category_id": 165,
+    "card_id": 120,
+    "merchant_subsector_description": 240,
+    "merchant_longitude": 150,
+    "purchase_hour": 113,
+    "card_geopoint": 162,
+    "purchase_amount": 134,
+    "card_reward_program": 158,
+    "merchant_state": 148,
+    "merchant_geopoint": 169,
+    "risk": 100,
+    "purchase_date": 148,
+    "authorized_flag": 128
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
