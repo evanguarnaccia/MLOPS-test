@@ -10,7 +10,7 @@ import urllib3
 
 # Disable warnings for unverified HTTPS requests
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-https://dss-evan-sanofi.fe-aws.dkucloud-dev.com/projects/TUT_PROJECT_STANDARDS/version-control/
+
 # Environment variables
 DATAIKU_INSTANCE_URL = "https://dss-evan-sanofi.fe-aws.dkucloud-dev.com"
 DATAIKU_API_KEY = "dkuaps-rD0XQJBЗItIFlX9t0XeN9HcBnV1cGZ9А"
