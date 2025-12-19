@@ -10,14 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-        with:
-          # This ensures we get the ACTUAL commit on your branch,
-          # not the temporary merge commit.
-          ref: ${{ github.event.pull_request.head.sha }}
-          fetch-depth: 0
-
       - name: Run Dataiku GitOps Action
         uses: qcastel/dataiku-gitops-github-action@master
         with:
