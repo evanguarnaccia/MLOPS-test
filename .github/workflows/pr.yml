@@ -27,5 +27,5 @@ jobs:
           dataiku_instance_dev_url: "https://dss-evan-sanofi.fe-aws.dkucloud-dev.com/"
           dataiku_instance_staging_url: ${{ vars.DATAIKU_INSTANCE_STAGING_URL }}
           dataiku_instance_prod_url: ${{ vars.DATAIKU_INSTANCE_PROD_URL }}
-          dataiku_project_key: "ps_br2"
+          dataiku_project_key: "TUT_PROJECT_STANDARDS"
           run_tests_only: "true"
