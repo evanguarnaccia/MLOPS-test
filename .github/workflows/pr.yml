@@ -8,7 +8,6 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-          
       - name: Run Dataiku GitOps Action
         uses: evanguarnaccia/dataiku-gitops-github-action@master
         with:
