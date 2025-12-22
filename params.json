@@ -75,7 +75,7 @@
     },
     "codeEnvs": {
       "python": {
-        "mode": "INHERIT",
+        "mode": "USE_BUILTIN_MODE",
         "preventOverride": false
       },
       "r": {
