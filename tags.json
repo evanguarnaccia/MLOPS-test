@@ -3,12 +3,20 @@
     "duplicated": {
       "color": "#3A85AD"
     },
-    "downloads": {},
+    "downloads": {
+      "color": "#de1ea5"
+    },
     "imported": {
       "color": "#263238"
     },
-    "tutorial": {},
-    "academy": {},
-    "govern-training": {}
+    "tutorial": {
+      "color": "#FFD83D"
+    },
+    "academy": {
+      "color": "#d66b9b"
+    },
+    "govern-training": {
+      "color": "#90a8b7"
+    }
   }
 }
