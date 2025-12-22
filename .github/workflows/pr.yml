@@ -15,10 +15,10 @@ jobs:
         with:
           python-script: "tests.py"
           dataiku_api_token_dev: "dkuaps-UvKn0wnMNs8sOCZ7tRxKPjqjkAXwtxwg"
-          dataiku_api_token_staging: ${{ secrets.DATAIKU_INSTANCE_STAGING_CI_API_TOKEN }}
-          dataiku_api_token_prod: ${{ secrets.DATAIKU_INSTANCE_PROD_CI_API_TOKEN }}
+          #dataiku_api_token_staging: ${{ secrets.DATAIKU_INSTANCE_STAGING_CI_API_TOKEN }}
+          #dataiku_api_token_prod: ${{ secrets.DATAIKU_INSTANCE_PROD_CI_API_TOKEN }}
           dataiku_instance_dev_url: "https://dss-evan-sanofi.fe-aws.dkucloud-dev.com/"
-          dataiku_instance_staging_url: ${{ vars.DATAIKU_INSTANCE_STAGING_URL }}
-          dataiku_instance_prod_url: ${{ vars.DATAIKU_INSTANCE_PROD_URL }}
+          #dataiku_instance_staging_url: ${{ vars.DATAIKU_INSTANCE_STAGING_URL }}
+          #dataiku_instance_prod_url: ${{ vars.DATAIKU_INSTANCE_PROD_URL }}
           dataiku_project_key: "TUT_PROJECT_STANDARDS"
           run_tests_only: "true"
