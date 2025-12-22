@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Run Dataiku GitOps Action
-        uses: qcastel/dataiku-gitops-github-action@master
+        uses: evanguarnaccia/dataiku-gitops-github-action@master
         with:
           python-script: "tests.py"
           dataiku_api_token_dev: "dkuaps-UvKn0wnMNs8sOCZ7tRxKPjqjkAXwtxwg"
