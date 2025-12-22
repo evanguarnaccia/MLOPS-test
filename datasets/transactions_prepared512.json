@@ -66,12 +66,12 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1766430826960
+    "lastModifiedOn": 1766431588656
   },
   "tags": [],
   "params": {
     "connection": "filesystem_managed",
-    "path": "${projectKey}/transactions_prepared323",
+    "path": "${projectKey}/transactions_prepared512",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
