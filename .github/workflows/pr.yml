@@ -6,17 +6,22 @@ on:
       - master
 
 jobs:
-  deploy:
+  run-tests:
     runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
       - name: Run Dataiku GitOps Action
         uses: evanguarnaccia/dataiku-gitops-github-action@master
         with:
           python-script: "tests.py"
           dataiku_api_token_dev: "dkuaps-UvKn0wnMNs8sOCZ7tRxKPjqjkAXwtxwg"
-          #dataiku_api_token_staging: ${{ secrets.DATAIKU_INSTANCE_STAGING_CI_API_TOKEN }}
-          #dataiku_api_token_prod: ${{ secrets.DATAIKU_INSTANCE_PROD_CI_API_TOKEN }}
+          dataiku_api_token_staging: ${{ secrets.DATAIKU_INSTANCE_STAGING_CI_API_TOKEN }}
+          dataiku_api_token_prod: ${{ secrets.DATAIKU_INSTANCE_PROD_CI_API_TOKEN }}
           dataiku_instance_dev_url: "https://dss-evan-sanofi.fe-aws.dkucloud-dev.com/"
-          #dataiku_instance_staging_url: ${{ vars.DATAIKU_INSTANCE_STAGING_URL }}
-          #dataiku_instance_prod_url: ${{ vars.DATAIKU_INSTANCE_PROD_URL }}
+          dataiku_instance_staging_url: ${{ vars.DATAIKU_INSTANCE_STAGING_URL }}
+          dataiku_instance_prod_url: ${{ vars.DATAIKU_INSTANCE_PROD_URL }}
           dataiku_project_key: "TUT_PROJECT_STANDARDS"
           run_tests_only: "true"
