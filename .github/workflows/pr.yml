@@ -8,12 +8,6 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
-    steps:
-      - name: Install Python Dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install wandb pandas pytest 
           
       - name: Run Dataiku GitOps Action
         uses: evanguarnaccia/dataiku-gitops-github-action@master
