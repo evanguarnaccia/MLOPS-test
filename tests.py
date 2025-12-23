@@ -23,7 +23,7 @@ project = client.get_project(DATAIKU_PROJECT_KEY)
 print(f"Connected to project: {DATAIKU_PROJECT_KEY}")
 
 # --- Retrieve authentication info with secrets ---
-auth_info = client.get_auth_info(with_secrets=True)
+auth_info = client.get_auth_info(with_secrets=False)
 secret_value = None
 for secret in auth_info.get("secrets", []):
     if secret.get("key") == "wandbcred":
