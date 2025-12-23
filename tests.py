@@ -23,18 +23,18 @@ project = client.get_project(DATAIKU_PROJECT_KEY)
 print(f"Connected to project: {DATAIKU_PROJECT_KEY}")
 
 # --- Retrieve authentication info with secrets ---
-auth_info = client.get_auth_info(with_secrets=False)
-secret_value = None
-for secret in auth_info.get("secrets", []):
-    if secret.get("key") == "wandbcred":
-        secret_value = "3c37e9da1f1145e2202f89d7223b45293643196b"
-        break
-if not secret_value:
-    raise Exception("Secret 'wandbcred' not found")
+#auth_info = client.get_auth_info(with_secrets=False)
+#secret_value = None
+#for secret in auth_info.get("secrets", []):
+#    if secret.get("key") == "wandbcred":
+#        secret_value = "3c37e9da1f1145e2202f89d7223b45293643196b"
+#        break
+#if not secret_value:
+#    raise Exception("Secret 'wandbcred' not found")
 
 # --- W&B login / API ---
-#wandb.login(key=WANDB_API_KEY)
-wandb.login(key=secret_value)
+wandb.login(key=WANDB_API_KEY)
+#wandb.login(key=secret_value)
 
 api = wandb.Api()
 
