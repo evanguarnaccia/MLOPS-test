@@ -63,7 +63,7 @@
     "main": {
       "items": [
         {
-          "ref": "transactions_prepared234",
+          "ref": "transactions_prepared2",
           "appendMode": false
         }
       ]
@@ -75,7 +75,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1766458478751
+    "lastModifiedOn": 1766461192018
   },
   "tags": [],
   "customFields": {},
