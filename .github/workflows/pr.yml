@@ -8,7 +8,8 @@ on:
 jobs:
   run-tests:
     runs-on: ubuntu-latest
-
+    env:
+      PYTHONWARNINGS: "ignore::DeprecationWarning"
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
