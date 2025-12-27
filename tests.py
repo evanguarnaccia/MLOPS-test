@@ -13,7 +13,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # Environment variables
 DATAIKU_INSTANCE_URL = "https://dss-evan-sanofi.fe-aws.dkucloud-dev.com"
-DATAIKU_API_KEY = "dkuaps-ru5XrOOO3kyIAyhSHQSC7Nrn3ONf37qz"
+DATAIKU_API_KEY = "dkuaps-MdsgAu6ntCYFADNfNTsyGBks4gjJsd3U"
 DATAIKU_PROJECT_KEY = "TUT_PROJECT_STANDARDS"
 WANDB_API_KEY = "3c37e9da1f1145e2202f89d7223b45293643196b"
 
